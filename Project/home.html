@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Hello {{name}}!!!</h1>
+
+<form action="add">
+    Calculating battery voltage for electric vehicle <br>
+    Enter voltage of each battery = <input type="text" name="a"><br>
+    Enter current rating of each battary in ampear hour = : <input type="text" name="b"><br>
+    Enter number of batteries in series = <input type="text" name="c"><br>
+    Enter Number of batteries in parallel = <input type="text" name="d"><br>
+    Enter batteries efficency in percentage = <input type="text" name="e"><br>
+    Enter load connected to batteries in watts = <input type="text" name="f"><br>
+    <input type="submit">
+</form>
+
+{% endblock %}
